@@ -22,9 +22,10 @@ struct DetailView: View {
                     Image(thisauthor.imageAuthor)
                 }
                 VStack(alignment: .leading, spacing: 5){
-                    // 2666 is diamond 2014 is a dash
+                    // 2666 is diamond 2014is a dash
+                    // clubs 2663
                         ForEach(thisauthor.quotes, id: \.self) {quote in
-                            Text("\u{2014} \(quote)").multilineTextAlignment(.leading).padding(.vertical)
+                            Text("\u{2663} \(quote)").multilineTextAlignment(.leading).padding(.vertical)
                         }
                 }
             }
